@@ -89,7 +89,7 @@ class ProgressBar(object):
 
     _DEFAULT_MAXVAL = 100
     _DEFAULT_TERMSIZE = 80
-    _DEFAULT_WIDGETS = [widgets.Percentage(), ' ', widgets.Bar()]
+    _DEFAULT_WIDGETS = [widgets.Percentage(), ' ', widgets.Bar(), widgets.ETA()]
 
     def __init__(self, maxval=None, widgets=None, term_width=None, poll=1,
                  left_justify=True, fd=None):
